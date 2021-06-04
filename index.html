@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:400,600,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
+</head>
+
+<body>
+
+
+<script type="text/javascript">
+
+	function darken_screen(yesno){
+		if( yesno == true ){
+			document.querySelector('.screen-darken').classList.add('active');
+		}
+		else if(yesno == false){
+			document.querySelector('.screen-darken').classList.remove('active');
+		}
+	}
+	
+	function close_offcanvas(){
+		darken_screen(false);
+		document.querySelector('.mobile-offcanvas.show').classList.remove('show');
+		document.body.classList.remove('offcanvas-active');
+	}
+
+	function show_offcanvas(offcanvas_id){
+		darken_screen(true);
+		document.getElementById(offcanvas_id).classList.add('show');
+		document.body.classList.add('offcanvas-active');
+	}
+
+	document.addEventListener("DOMContentLoaded", function(){
+		document.querySelectorAll('[data-trigger]').forEach(function(everyelement){
+			
+			let offcanvas_id = everyelement.getAttribute('data-trigger');
+			
+			everyelement.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	show_offcanvas(offcanvas_id);
+	  			
+			});
+		});
+
+		document.querySelectorAll('.btn-close').forEach(function(everybutton){
+			
+			everybutton.addEventListener('click', function (e) {
+				e.preventDefault();
+	        	close_offcanvas();
+	  		});
+		});
+
+		document.querySelector('.screen-darken').addEventListener('click', function(event){
+			close_offcanvas();
+		});
+		
+    }); 
+	// DOMContentLoaded  end
+</script>
+
+<span class="screen-darken"></span>
+
+
+
+
+<!-- <button data-trigger="navbar_main" class="d-lg-none btn btn-warning" type="button">  Show navbar </button> -->
+<!-- <div class="container" style="width: 80%;"> -->
+<div class="container d-flex justify-content-between upper-div">
+<a class="navbar-brand logo d-lg-none" href="index.html"><img src="assets/img/Logo.png" style="height: 50px;" /></a>
+<button data-trigger="navbar_main" class="d-lg-none btn align-items-end"><i style="font-size: 25px;color: rgb(73, 73, 73);" class="fa fa-bars"></i></button>
+</div>
+
+<nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg bg-white navbar-light fixed-top clean-navbar">
+    <!-- <div class="container-fluid"> -->
+    <div class="offcanvas-header">  
+		<button class="btn-close float-end"></button>
+	</div>
+    <div class="container">
+        <a class="navbar-brand logo logo-main" href="index.html"><img src="assets/img/Logo.png" style="height: 50px;" /></a>
+        <!-- <button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button> -->
+        <div id="navcol-1">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="pricing.html">Our Prices</a></li>
+                <li class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="dropdown-toggle nav-link" href="#">Services </a>
+                    <div class="dropdown-menu drop1">
+                        <a class="dropdown-item" href="service-page.html" style="margin-top: 5px;font-size: 14px;">Assignment Writing Services</a>
+                        <a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Essay Writing Service</a>
+                        <a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Dissertation Writing Service</a>
+                        <a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Coursework Help</a>
+                        <a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Research Paper Writing</a>
+                        <a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Team Paper Help</a>
+                        <a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Proofreading Service</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div>
+                        <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#"> Expertise </a>
+                        <ul class="dropdown-menu big-drop">
+                            <li class="item-drop dropdown-item">
+                                <div class="item-header-div">
+                                    <a class="item-header" href="#">Assignment</a>
+                                    </div>
+                                <ul class="list-unstyled">
+                                    <li> <a href="expertise-page.html"> Do My Assignment </a> </li>
+                                    <li> <a href="#"> MBA Assignment Help </a>  </li>
+                                    <li> <a href="#"> Nursing Assignment Writing </a>  </li>
+                                    <li> <a href="#"> Law Assignment Help </a>  </li>
+                                    <li> <a href="#"> Online Assignment Help </a>  </li>
+                                </ul>
+                            </li>
+                            <li class="item-drop dropdown-item">
+                                <div class="item-header-div">
+                                    <a class="item-header" href="#">Essay</a>
+                                    </div>
+                                <ul class="list-unstyled">
+                                    <li> <a href="#"> Do My Essay </a> </li>
+                                    <li> <a href="#"> Law Essay Writing </a> </li>
+                                    <li> <a href="#"> Nursing Essay Writing </a> </li>
+                                    <li> <a href="#"> UK Essay </a> </li>
+                                    <li> <a href="#"> Write My Essay </a> </li>
+                                </ul>
+                            </li>
+                            <li class="item-drop dropdown-item">
+                                <div class="item-header-div">
+                                    <a class="item-header" href="#">Dissertation</a>
+                                    </div>
+                                <ul class="list-unstyled">
+                                    <li> <a href="#"> Dissertation Methodology </a> </li>
+                                    <li> <a href="#"> Law Dissertation Writing </a> </li>
+                                    <li> <a href="#"> Marketing Dissertation Help</a> </li>
+                                    <li> <a href="#"> Dissertation Help </a> </li>
+                                    <li> <a href="#"> Nursing Dissertation Writing Help </a> </li>
+                                </ul>
+                            </li>
+                            <li class="item-drop dropdown-item">
+                                <div class="item-header-div">
+                                    <a class="item-header" href="#">Dissertation</a>
+                                    </div>
+                                <ul class="list-unstyled">
+                                    <li> <a href="#"> Buy Coursework Online </a> </li>
+                                    <li> <a href="#"> Do My Coursework </a> </li>
+                                    <li class="extra" style="color: white;">-</li>
+                                    <li class="extra" style="color: white;">-</li>
+                                    <li class="extra" style="color: white;">-</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="blog-post-list.html">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+<!-- </div> -->
+</nav>
+
+
+    <main class="page landing-page">
+        <section class="clean-block hero-header">
+            <div class="container d-md-flex justify-content-md-center align-items-md-center">
+                <div class="hero-heading">
+                    <h1 style="color: rgb(255,255,255);text-shadow: 3px 3px 3px rgba(0,0,0,0.59);">Best Assignment Help UK</h1>
+                    <p style="color: rgb(255,255,255);">Get Your Custom Assignment Writing Solution at Affordable Cost by UK Assignment Experts.</p>
+                </div>
+                <div class="hero-card">
+                    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-between align-items-center align-items-sm-center align-items-md-center align-items-lg-center align-items-xl-center justify-content-xxl-center align-items-xxl-center" style="margin-left: 17px;"><img src="assets/img/order-now-e1581676710509.png" style="height: 104px;margin: 0px;margin-right: 0px;">
+                        <div>
+                            <h4 style="text-align: right;color: rgb(0,0,0);width: 129.7344px;">PLACE AN ORDER</h4>
+                            <h6 style="text-align: right;color: rgb(0,0,0);">To Get 15% Discount</h6>
+                        </div>
+                    </div>
+                    <form class="hero-form" style="background: rgba(255,255,255,0);color: rgba(255,255,255,0);">
+                        <input class="form-control" type="text" style="background: rgba(255,255,255,0);border-radius: 0px;border-color: rgb(0,0,0);color: rgb(0,0,0);margin-bottom: 10px;" placeholder="Name">
+                        <input class="form-control" type="text" style="background: rgba(255,255,255,0);border-radius: 0px;border-color: rgb(0,0,0);color: rgb(0,0,0);margin-bottom: 10px;" placeholder="Email">
+                        <input class="form-control" type="text" style="background: rgba(255,255,255,0);border-radius: 0px;border-color: rgb(0,0,0);color: rgb(0,0,0);margin-bottom: 10px;" placeholder="Phone">
+                        <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-end justify-content-sm-end justify-content-md-end justify-content-lg-end justify-content-xl-end justify-content-xxl-end"><button class="btn btn-primary" type="button" style="background: rgb(253,99,13);font-size: 12px;">Order Now</button></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block gradient-section">
+            <div class="container">
+                <div class="d-lg-flex" style="width: 100%;">
+                    <div class="col d-flex justify-content-center justify-content-sm-center gradient-container">
+                        <img class="gradient-img" src="assets/img/Fastest-Turnaround-1-e1581693009594-80x80-1 (1).png" />
+                        <div>
+                            <h1 class="gradient-heading">Fastest Turnaround</h1>
+                            <h6 class="gradient-para">24 Hours Deadline</h6>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center gradient-container">
+                        <img class="gradient-img" src="assets/img/Revision-1-e1581692979991-1-80x80-1.png" />
+                        <div>
+                            <h1 class="gradient-heading">Free Revisions</h1>
+                            <h6 class="gradient-para">Until Satisfaction</h6>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center gradient-container">
+                        <img class="gradient-img" src="assets/img/verified-1-e1581693188308-1-80x80-1.png" />
+                        <div>
+                            <h1 class="gradient-heading">Quality Verified</h1>
+                            <h6 class="gradient-para">By Tutor&#39;s Turnitin</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block txt-section">
+            <div class="container txt-container">
+                <h1 class="txt-heading">Easy Online Steps to Get Your Assignment Done</h1>
+                <p class="txt-para">Our user friendly online system is made to facilitate students, and 360 customer support feel you relax at every spot with proper guidance.</p>
+            </div>
+            <div class="container">
+                <div class="feature-container">
+                    <div class="feature-item"><i class="far fa-folder feature-icon"></i>
+                        <h2 class="feature-heading">Make an Order</h2>
+                        <p class="feature-para">Signup and fill your assignment details with instructions and attachments. Make sure you provide all necessary requirements to write a good assignment.</p>
+                    </div>
+                    <div class="feature-item"><i class="far fa-credit-card feature-icon"></i>
+                        <h2 class="feature-heading">Proceed with Payment</h2>
+                        <p class="feature-para">Pay without risk using a secure payment method: Visa, Master Card or PayPal. We will confirm you and assign best writer according to your subject needs.</p>
+                    </div>
+                    <div class="feature-item"><i class="fas fa-pen-nib feature-icon"></i>
+                        <h2 class="feature-heading">Relax while Writing</h2>
+                        <h6 style="font-weight: normal;text-align: center;margin-top: 10px;"></h6>
+                        <p class="feature-para">No need to worry anything while we write your assignment, we will ask you if there is any confusion in your guideline and assignment details, so have some rest.</p>
+                    </div>
+                    <div class="feature-item last-item"><i class="far fa-newspaper feature-icon"></i>
+                        <h2 class="feature-heading">Successful Delivery</h2>
+                        <p class="feature-para">We deliver your assignment before your deadline so you can have a review and ask for the revision if you need to improvise your assignment.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-center clean-block" style="padding: 20px;padding-bottom: 20px;background-blend-mode: multiply;background-image: url(&quot;assets/img/00.jpg&quot;);background-color: rgba(240,90,40,0.94)!important;">
+            <div class="section-top-gradient"></div>
+            <div class="container" style="padding-top: 80px;padding-bottom: 80px;">
+                <div class="feature-container">
+                    <div class=" borderred-cols">
+                        <div class="borderred-div"><i class="fa fa-user-o border-icon"></i>
+                            <h1 class="border-heading">1200</h1>
+                            <p class="border-para">EXPERTS ON BOARD</p>
+                        </div>
+                    </div>
+                    <div class="borderred-cols">
+                        <div class="borderred-div"><i class="fa fa-shopping-cart border-icon"></i>
+                            <h1 class="border-heading">50</h1>
+                            <p class="border-para">NEW ORDERS PER DAY</p>
+                        </div>
+                    </div>
+                    <div class="borderred-cols">
+                        <div class="borderred-div"><i class="fa fa-users border-icon"></i>
+                            <h1 class="border-heading">98%</h1>
+                            <p class="border-para">CUSTOMER SATISFACTION</p>
+                        </div>
+                    </div>
+                    <div class="borderred-cols">
+                        <div class="borderred-div"><i class="fa fa-id-card-o border-icon"></i>
+                            <h1 class="border-heading">15%</h1>
+                            <p class="border-para">15% OFF ON 1ST ORDER</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bottom-gradient"></div>
+        </section>
+        <section class="clean-block colored-section">
+            <div class="section-top-gradient" style="background: linear-gradient(177deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(57,57,57,0) 51%, rgba(255,255,255,0));"></div>
+            <div class="container d-xl-flex justify-content-xl-center " style="background: rgba(13,110,253,0);">
+                <div class="left-text">
+                    <h2>Fastest and Most Economical Custom Assignment Help UK</h2>
+                    <p>The UK students are finding difficulty to sustain good grades as they have extensive pressures which leaves them incapable of meeting the deadlines and achieving good scores.</p>
+                    <p>This is where our custom assignment help can share your burden with the expertise of our expert writing team, having academic excellence and years of professional writing experience.</p>
+                    <p>Our services are based on a commitment to top notch quality but at an affordable price. We are focused on writing assignments for you, so it helps sharpen your academic research capabilities.</p>
+                    <p>If you are finding it difficult to engage in comprehensive research and time-consuming evaluation of materials before writing an assignment, you can acquire our custom assignment writing UK at affordable cost which can serve you as a perspective material to assist your writing.</p>
+                    <p>The core focus of our assignment help UK is to make the students understand their own potential through effective coaching. No matter how short your deadline is, our trained writers can give the efficient support to help completing work within due date.</p>
+                </div><img class="right-image" src="assets/img/Why-take-help.jpg">
+            </div>
+            <div class="section-bottom-gradient" style="background: linear-gradient(3deg, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
+        </section>
+        
+        <section class="clean-block white-section">
+            <div class="container d-xl-flex justify-content-xl-center" style="background: rgba(13,110,253,0)">
+                <img class="left-image" src="assets/img/Why-Custom-Assignment-Writing.jpg">
+                <div class="right-text">
+                    <h2>Why Custom Assignment Writing?</h2>
+                    <p>We are ensuring flexibility and adaptability to students’ requirements so you are welcome to hire our writer of subject specialists from every educational level including high school, bachelors, master’s and PhD qualified writers.</p>
+                    <p>Our services are not limited for selective field of study, but we have qualified staff capable of providing the assignment help for the field of Law, Chemistry, Art and design, Health sciences, Nursing etc.</p>
+                    <p>We have maintained the fastest turnaround time where you can also get our help for the tasks having deadlines of even few hours. But no matter how short is your deadline, we ensure the delivery of quality work and each order is assigned to the writers based on their ability to meet requirements of the order based on their qualification and experience.</p>
+                    <p>&nbsp;Another attractive feature is our 24/7 support where you can get in contact with our support team around the clock both before and after placing the order. All you have to do is leave a message on live chat, send an email or give us a call and we guarantee the timely response. To live up to our claim of being the best custom assignment help providers in UK.</p>
+                </div>
+            </div>
+        </section>
+        <section class="clean-block" style="background-image: url(&quot;assets/img/002%20(1).jpg&quot;),linear-gradient(140deg,#f05a28 42%,#2a388f 41%)!important;background-blend-mode: multiply;color: rgb(255,255,255);background-size: cover;background-position: 50%;padding-top: 100px;padding-bottom: 100px;background-repeat: no-repeat;">
+            <div class="section-top-gradient" style="background: linear-gradient(-177deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(57,57,57,0) 51%, rgba(255,255,255,0));"></div>
+            <div class="container" style="background: rgba(13,110,253,0);text-align: center;">
+                <h1 style="margin-top: 50px;">Additional Services to Make Assignment Help Easier</h1>
+                <p>We not only guarantee the quality content with great affordability but we are also offering the following supportive services.</p>
+                <div class="d-xl-flex justify-content-xl-center align-items-xl-center" style="text-align: left;margin-top: 50px;">
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>24/7 Customer Support:&nbsp;</strong>&nbsp;You can get in touch with us regarding pre and post order placement queries</li>
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Unlimited Free Revisions:&nbsp;</strong> You can ask for any changes and revision in wok within 15 to 30 days for free</li>
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Custom Referencing Style:&nbsp;</strong> Our expert can adapt to multiple referencing styles such as Harvard, MLA, APA, etc.</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Secure Online Payments:&nbsp;</strong> The secured payments to ensure the safe transactions by VISA, Master Card and PayPal</li>
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Customer Privacy Assurance:&nbsp;</strong> We ensure 100% confidentiality of personal information and assignment data</li>
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Qualified Writing Team:&nbsp;</strong> We have different qualified experts for all educational levels to provide best services</li>
+                    </ul>
+                </div><button class="btn btn-primary" type="button" style="background: rgba(13,110,253,0);border: 1px solid rgb(255, 255, 255);border-radius: 1px;padding-top: 10px;padding-bottom: 10px;padding-right: 20px;padding-left: 20px;margin-top: 70px;"><strong>ORDER NOW</strong></button>
+            </div>
+            <div class="section-bottom-gradient" style="background: linear-gradient(3deg, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
+        </section>
+        <section class="clean-block colored-section">
+            <div class="section-top-gradient" style="background: linear-gradient(-177deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(57,57,57,0) 51%, rgba(255,255,255,0));"></div>
+            <div class="container d-xl-flex justify-content-xl-center justify-content-xxl-center" style="background: rgba(13,110,253,0);">
+                <div class="left-text left-text-2">
+                    <h2>Custom Assignment Writing UK at Affordable Cost</h2>
+                    <p>You can avail our services at comparatively low prices and can select most attractive package out of our three packages designed to make our services affordable for all.</p>
+                    <p>Our standard plan starts with £8.49 per page and mega plan is starting from £13.49 per page. Moreover, if you want distinction level quality Equivalent to 1:1 then you can hire our help by choosing our extended plan starting from £18.49 per page. But whichever plan you choose, there is 100% guarantee of meeting the requirements and Plagiarism-free content.</p>
+                </div><img class="right-image right-image-2" src="assets/img/Have-A-Look-At-Some-Stats.jpg">
+            </div>
+            <div class="section-bottom-gradient" style="background: linear-gradient(3deg, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
+        </section>
+        <section class="clean-block " style="background: rgba(4,0,194,0);color: rgb(0,0,0);padding-top: 50px;padding-bottom: 50px;">
+            <div class="section-top-gradient" style="background: linear-gradient(-177deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(57,57,57,0) 51%, rgba(255,255,255,0));"></div>
+            <div class="container" style="text-align: center;">
+                <h1 style="margin-top: 50px;color: #333;font-size: 30px;">Diverse Range of Services</h1>
+                <p style="color: #666;font-size: 14px;">Our services are not limited to custom assignment writing but we are also providing online assignment help for those who want guidance about how to cater their assignments.</p>
+                <div class="d-xl-flex justify-content-xl-center align-items-xl-start align-items-xxl-start" style="text-align: left;margin-top: 50px;font-size: 14px;color: #666;">
+                    <ul class="list-unstyled" style="margin-right: 25px;">
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Essay Writing Help:&nbsp;</strong> We offer all types of essay writing help including admission essay, critical analysis essay, review essay and research based essays</li>
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Coursework Writing:&nbsp;</strong> Coursework help is another very useful category for UK students. We can help in your coursework done with timely assistance</li>
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Research and Term Paper:&nbsp;</strong> We also offer the research paper writing as well as term paper writing services to cover all academic needs of students</li>
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Proofreading Help:</strong>&nbsp; Our proofreading services are aimed at ensuring elimination of all types of grammatical and spelling errors as well as formatting mistakes</li>
+                        <li><i class="fa fa-caret-right" style="color: rgb(255,138,0);font-size: 19px;margin-right: 5px;"></i><strong>Dissertation Writing:&nbsp;</strong> We have PhD scholars to assist you in your under-graduate, masters and Doctoral Proposals and Dissertations writing to complete</li>
+                        <li></li>
+                    </ul>
+                </div><button class="btn btn-primary" type="button" style="background: rgba(13,110,253,0);border: 1px solid rgb(255, 255, 255);border-radius: 1px;padding-top: 10px;padding-bottom: 10px;padding-right: 20px;padding-left: 20px;margin-top: 70px;"><strong>ORDER NOW</strong></button>
+            </div>
+            <div class="section-bottom-gradient" style="background: linear-gradient(3deg, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
+        </section>
+        <section style="filter: blur(0px);background-blend-mode: multiply;background: url(&quot;assets/img/001%20(1).jpg&quot;) top center / cover no-repeat, rgba(42,56,143,0.69);">
+            <div class="section-top-gradient" style="background: linear-gradient(-177deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(57,57,57,0) 51%, rgba(255,255,255,0));"></div>
+            <div class="container" style="padding-top: 60px;padding-bottom: 60px;">
+                <div class="feature-container" style="padding: 31px;text-align: center;padding-top: 60px;display: flex;padding-bottom: 60px;flex-direction: row;flex-wrap: wrap;margin-top: 10px;margin-bottom: 10px;">
+                    <div class="feature-item"><img src="assets/img/Masters-1-e1581692989899.png">
+                        <h4 class="degree-text">Master's</h4>
+                    </div>
+                    <div class="feature-item"><img src="assets/img/Bachelors-1-e1581693015120-1.png">
+                        <h4 class="degree-text">Bachelors</h4>
+                    </div>
+                    <div class="feature-item"><img src="assets/img/High-school-1-e1581693002186-1.png">
+                        <h4 class="degree-text">High School</h4>
+                    </div>
+                    <div class="feature-item last-item"><img src="assets/img/Phd-1-e1581692995646-1.png">
+                        <h4 class="degree-text">PHD</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bottom-gradient" style="background: linear-gradient(3deg, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
+        </section>
+        <section class="clean-block" style="background: rgba(4,0,194,0);color: rgb(0,0,0);padding-top: 50px;padding-bottom: 50px;text-align: center;">
+            <div class="section-top-gradient" style="background: linear-gradient(-177deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(57,57,57,0) 51%, rgba(255,255,255,0));"></div>
+            <div class="container" style="background: rgba(13,110,253,0);text-align: center;color: #666;">
+                <h1 style="margin-top: 50px;margin-bottom: 50px;color: black;">Your Satisfaction is Our Responsibility</h1>
+                <p style="text-align: left;">We hold each of our writer responsible for good conduct and production of 100% original content which is not only plagiarism-free but also innovative and creative based on comprehensive and critical review of data.</p>
+                <p style="text-align: left;">&nbsp;Quality is guaranteed from the point you make an order till its delivery as well as post-delivery revisions because we assign each order by evaluating its level of complexity and level of qualification required to ensure good grades.</p>
+                <p style="text-align: left;">&nbsp;Regardless of your field, you can feel free to share your briefs for assignment, essay, dissertation, research paper or coursework, and get superior and custom writing help just the way you like.</p>
+            </div>
+            <div class="section-bottom-gradient" style="background: linear-gradient(3deg, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
+        </section>
+        <section style="background: url(&quot;assets/img/003%20(1).jpg&quot;) top center / cover no-repeat, #ff0000;background-blend-mode: overlay;background-color: rgba(240,90,40,0.5)!important;">
+            <div class="section-top-gradient" style="background: linear-gradient(-183deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(57,57,57,0) 51%, rgba(255,255,255,0));"></div>
+            <div class="container" style="padding-top: 60px;padding-bottom: 60px;">
+                <div class="feature-container">
+                    <div class="feature-item"><img src="assets/img/Customer-1-e1581693028179-1.png">
+                        <h3 class="top-header">CUSTOMERS</h3>
+                        <h1 class="bottom-header">8101</h1>
+                    </div>
+                    <div class="feature-item"><img src="assets/img/Active-Writers-1-e1581693042895-1.png">
+                        <h3 class="top-header">WRITERS ACTIVE</h3>
+                        <h1 class="bottom-header">840</h1>
+                    </div>
+                    <div class="feature-item"><img src="assets/img/Average-qulity-scores-1-e1581693036262-1.png">
+                        <h3 class="top-header">ACTIVE QUALITY SCORE</h3>
+                        <h1 class="bottom-header">9.5/10</h1>
+                    </div>
+                    <div class="feature-item last-item"><img src="assets/img/Writers-online-1-e1581692971100-1.png">
+                        <h3 class="top-header">COMPLETE ORDER</h3>
+                        <h1 class="bottom-header">9630</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="section-bottom-gradient" style="background: linear-gradient(3deg, rgb(255,255,255) 0%, rgb(255,255,255) 49%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
+        </section>
+        <section class="clean-block" style="background: rgba(4,0,194,0);color: rgb(0,0,0);padding-top: 100px;padding-bottom: 100px;">
+            <div class="container" style="background: rgba(13,110,253,0);text-align: center;">
+                <h1 style="margin-top: 50px;font-size: 30px;">What Our Customers Say</h1>
+                <p style="text-align: center;color: #666;">98% of our clients are satisfied with the delivered orders. See below!</p><div class="row">
+    <div class="large-12 columns">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body" style="padding-top: 40px;padding-bottom: 40px;padding-right: 20px;padding-left: 20px;">
+                        <h4 class="card-title"><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i></h4>
+                        <p class="d-inline card-text" style="margin-top: 30px;height: 170px;max-height: 170px;">As it is said that the first impression is the last impression. And my first experience with Assignment Max is amazing. I got timely delivery of my research paper on such a short time notice. Now Assignment max is my partner for my whole academic life.</p>
+                        <h3 style="font-weight: bold;color: rgb(255,92,0);margin-top: 30px;"><i class="fas fa-grip-lines" style="font-size: 25px;"></i>Lucy Allen</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body" style="padding-top: 40px;padding-bottom: 40px;padding-right: 20px;padding-left: 20px;">
+                        <h4 class="card-title"><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i></h4>
+                        <p class="d-inline card-text" style="margin-top: 30px;height: 170px;max-height: 170px;">As it is said that the first impression is the last impression. And my first experience with Assignment Max is amazing. I got timely delivery of my research paper on such a short time notice. Now Assignment max is my partner for my whole academic life.</p>
+                        <h3 style="font-weight: bold;color: rgb(255,92,0);margin-top: 30px;"><i class="fas fa-grip-lines" style="font-size: 25px;"></i>Lucy Allen</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body" style="padding-top: 40px;padding-bottom: 40px;padding-right: 20px;padding-left: 20px;">
+                        <h4 class="card-title"><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i></h4>
+                        <p class="d-inline card-text" style="margin-top: 30px;height: 170px;max-height: 170px;">As it is said that the first impression is the last impression. And my first experience with Assignment Max is amazing. I got timely delivery of my research paper on such a short time notice. Now Assignment max is my partner for my whole academic life.</p>
+                        <h3 style="font-weight: bold;color: rgb(255,92,0);margin-top: 30px;"><i class="fas fa-grip-lines" style="font-size: 25px;"></i>Lucy Allen</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body" style="padding-top: 40px;padding-bottom: 40px;padding-right: 20px;padding-left: 20px;">
+                        <h4 class="card-title"><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i></h4>
+                        <p class="d-inline card-text" style="margin-top: 30px;height: 170px;max-height: 170px;">As it is said that the first impression is the last impression. And my first experience with Assignment Max is amazing. I got timely delivery of my research paper on such a short time notice. Now Assignment max is my partner for my whole academic life.</p>
+                        <h3 style="font-weight: bold;color: rgb(255,92,0);margin-top: 30px;"><i class="fas fa-grip-lines" style="font-size: 25px;"></i>Lucy Allen</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card-group">
+                <div class="card">
+                    <div class="card-body" style="padding-top: 40px;padding-bottom: 40px;padding-right: 20px;padding-left: 20px;">
+                        <h4 class="card-title"><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i><i class="fa fa-star" style="color: rgb(255,138,0);"></i></h4>
+                        <p class="d-inline card-text" style="margin-top: 30px;height: 170px;max-height: 170px;">As it is said that the first impression is the last impression. And my first experience with Assignment Max is amazing. I got timely delivery of my research paper on such a short time notice. Now Assignment max is my partner for my whole academic life.</p>
+                        <h3 style="font-weight: bold;color: rgb(255,92,0);margin-top: 30px;"><i class="fas fa-grip-lines" style="font-size: 25px;"></i>Lucy Allen</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </section>
+        <section class="slider-section">
+            <div class="container">
+                <div class="simple-slider">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="d-lg-flex justify-content-md-center align-items-md-center swiper-slide" style="padding: 100px;color: rgb(255,255,255);">
+                                <div>
+                                    <h2>Tips to Gain Concentration Power and for Better Study Notes</h2>
+                                    <p>Tips to Gain Concentration Power and for Better Study Notes We live in a time when technology is taking over all the activities. Now every movement is in the palm of your hands. You can instantly tap and get anything. The ratio of smartphone users is growing at a...</p><button class="btn btn-primary" type="button" style="background: rgba(31,64,99,0);border-radius: 5px;padding: 10px 20px;border-width: 2px;border-color: rgb(255,255,255);">Read More</button>
+                                </div>
+                                <div>
+                                    <img src="assets/img/blogs/Study-Notes.jpg" style="width: 500px;">
+                                </div>
+                            </div>
+                            <div class="d-lg-flex justify-content-md-center align-items-md-center swiper-slide" style="padding: 100px;color: rgb(255,255,255);">
+                                <div>
+                                    <h2>Primary and Secondary Research</h2>
+                                    <p>The Ultimate Differentiating Guide for Primary and Secondary Research Research is a scientific investigation performed by scientific trained observers step by step in a completely scientific manner. Research is the systematic investigation or experiment about...</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/blogs/Primary-and-Secondary-Research-Writing.jpg" style="width: 500px;">
+                                </div>
+                            </div>
+                            <div class="d-lg-flex justify-content-md-center align-items-md-center swiper-slide" style="padding: 100px;color: rgb(255,255,255);">
+                                <div>
+                                    <h2>Cheap Law Dissertation Writing</h2>
+                                    <p>Well-Researched Law Dissertation Writing Service to Help You Excel in Your Career Writing good law assignments or essay may lead to good grades in certain subjects, but effective law dissertation writing can lead you to great professional opportunities. A dissertation...</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/blogs/Cheap-law-Dissertation-Writing-Service.jpg" style="width: 500px;">
+                                </div>
+                            </div>
+                            <div class="d-lg-flex justify-content-md-center align-items-md-center swiper-slide" style="padding: 100px;color: rgb(255,255,255);">
+                                <div>
+                                    <h2>Expert Essay Writing Tips</h2>
+                                    <p>Students are usually asked to write a well-organised essay during their either undergraduate or postgraduate study at universities. Your essay must meet the standard requirements of well-organised essay which is quite tough task because it requires some basic...</p>
+                                </div>
+                                <div>
+                                    <img src="assets/img/blogs/Expert-Essay-Writing-Tips-for-Students.jpg" style="width: 500px;">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination" style="color: rgb(255,255,255);"></div>
+                        <div class="swiper-button-prev" style="border-color: rgb(255,255,255);color: rgb(255,255,255);"></div>
+                        <div class="swiper-button-next" style="color: rgb(255,255,255);"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>Assignments Max</h5>
+                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
+                        <li><a href="#" style="color: rgb(255,255,255);">Our Writers</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Contact Us</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">About Us</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Blog</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Refund Policy</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Revision Policy</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Privacy Policy</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Writing Services</h5>
+                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
+                        <li><a href="#" style="color: rgb(255,255,255);">Assignment Writing Services</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Cheap Essay Writing Services</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Coursework Help UK</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Online Assignment Help</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Dissertation Writing Service</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Proofreading Service UK</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Research Paper Writing Service</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Term Paper Help</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Subject Expertise</h5>
+                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
+                        <li><a href="#" style="color: rgb(255,255,255);">Law Essay Writing</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Nursing Assignment Writing</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">MBA Assignment Help</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Law Assignment Help</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Marketing Dissertation Help</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Nursing Dissertation Help</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Law Dissertation Writing</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Nursing Essay Writing</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Other Services</h5>
+                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
+                        <li><a href="#" style="color: rgb(255,255,255);">Do My Assignment</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Do My Essay</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Write My Essay</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">UK Essay</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Buy Coursework Online</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Coursework Help UK</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Dissertation Methodology</a></li>
+                        <li><a href="#" style="color: rgb(255,255,255);">Do My Coursework</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="margin-left: 40px;margin-right: 40px;margin-top: 20px;">
+            <div style="color: rgb(255,255,255);">
+                <h3 style="font-weight: bold;color: rgb(255,255,255);">Get In Touch</h3>
+                <p style="margin-bottom: -4px;"> (20) 3807 6733</p>
+                <p style="margin-bottom: -4px;"> support@assignmentmax.co.uk</p>
+                <p> CentralPoint, 45 Beech Street, London EC2Y 8AD</p>
+            </div>
+            <div></div>
+        </div>
+        <p class="d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="color: rgb(255,255,255);text-align: center;margin: 40px;"><br>Disclaimer:&nbsp; Assignment Max providing research based on the requirements to study and knowledge. You cannot supposed to submit the written material for your own.</p>
+        <div class="footer-copyright">
+            <p>© 2021 Copyright Text</p>
+        </div>
+    </footer>
+    <!-- </div> -->
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/vanilla-zoom.js"></script>
+    <script src="assets/js/theme.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+    <script>
+        $(document).ready(function() {
+          var owl = $('.owl-carousel');
+          owl.owlCarousel({
+            margin: 10,
+            nav: true,
+            loop: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 2
+              },
+              1000: {
+                items: 3
+              }
+            }
+          })
+        })
+        $(document).ready(function() {
+          var owl = $('.owl-carousel-2');
+          owl.owlCarousel({
+            margin: 10,
+            nav: true,
+            loop: true,
+            responsive: {
+              0: {
+                items: 1
+              },
+              600: {
+                items: 1
+              },
+              1000: {
+                items: 1
+              }
+            }
+          })
+        })
+      </script>
+</body>
+
+</html>
