@@ -813,6 +813,10 @@ left-text-2 {
   background: linear-gradient(127deg, #003e77, rgba(0,28,82,0.86) 45%, rgba(0,150,160,0.74) 61%, rgba(0,255,240,0.8)), url("../img/assignment-essay-dissertation-coursework.jpg") center / cover no-repeat;
   color: white;
 }
+.service-header .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 .service-section {
   margin-top: 100px;
@@ -824,6 +828,9 @@ left-text-2 {
 }
 .left-portion h3 {
   font-size: 25px;
+}
+.left-portion h4 {
+  font-size: 22px;
 }
 .left-portion p {
   font-size: 14px;
@@ -885,6 +892,7 @@ left-text-2 {
   border-style: none;
   color: white;
 }
+
 
 .owl-nav {
   position: absolute;
