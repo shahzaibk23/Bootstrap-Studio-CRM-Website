@@ -932,6 +932,26 @@ left-text-2 {
 .blog-section .card-textt p {
   margin-top: 15px;
 }
+
+.blog-post-header {
+  background-blend-mode: multiply;
+}
+.blog-post-header .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+}
+.blog-post-section {
+  margin-top: 100px;
+}
+.blog-img {
+  width: 100%;
+  border-radius: 5px;
+}
+.blog-text {
+  color: rgb(71,71,71);
+  font-size: 15px;
+}
 .owl-nav {
   position: absolute;
   z-index: -2;
