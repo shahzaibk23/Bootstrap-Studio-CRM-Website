@@ -25,261 +25,235 @@
     <link rel="stylesheet" href="assets/css/vanilla-zoom.min.css">
 </head>
 
-<body><style>
-    .big-drop {
-        position:relative;
-        width:80%;
-        left:0;
-        top:0;
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 2%;
-        padding-top: 2%;
-        justify-content: center;
-    }
-    .item-drop {
-        width:22%;
-        display:inline-block;
-        vertical-align:top;
-        margin-right: 20px;
-    }
-    .item-header-div {
-        /* width   : 200px;
-        height  : 50px;    */
-        position: relative;
-        z-index : 1;
-        /* border-bottom: 1px solid orangered;
-        border-bottom-width: thin; */
-        /* text-decoration: none;
-        color: grey; */
-    }
-    .item-header-div:before {
-        content : "";
-        position: absolute;
-        left    : 0;
-        bottom  : 0;
-        height  : 1px;
-        width   : 100%;  /* or 100px */
-        border-bottom:1px solid orangered;
-    }
-    .item-header {
-        text-decoration: none;
-        color: grey;
-        font-weight: bold;
-        /* padding-bottom: 10px; */
-    }
-    .item-header:hover {
-        color: rgb(148, 148, 148);
-    }
-    .container-div {
-        margin-left: 20px;
-        margin-right: 20%;
-    }
-    .list-unstyled li {
-        margin-top: 10px;
-    }
-    .list-unstyled li a {
-        text-decoration: none;
-        color: grey;
-    }
-    
-</style>
+<body><script src="assets/js/navSwitch.js"></script>
 
-<nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="height: 75.375px;">
-    <div class="container"><a class="navbar-brand logo" href="index.html"><img src="assets/img/Logo.png" style="height: 50px;" /></a><button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navcol-1">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="pricing.html">Our Prices</a></li>
-                <li class="nav-item dropdown"><a aria-expanded="false" data-bs-toggle="dropdown" class="dropdown-toggle nav-link" href="#">Services </a>
-                    <div class="dropdown-menu" style="padding-top: 10px;padding-right: 20px;padding-bottom: 10px;padding-left: 5px;border-radius: 0px;text-align: left;"><a class="dropdown-item" href="service-page.html" style="margin-top: 5px;font-size: 14px;">Assignment Writing Services</a><a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Essay Writing Service</a><a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Dissertation Writing Service</a><a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Coursework Help</a><a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Research Paper Writing</a><a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Team Paper Help</a><a class="dropdown-item" href="service-page.html" style="margin-top: 10px;font-size: 14px;">Proofreading Service</a></div>
-                </li>
-                <li class="nav-item">
-                    <div><a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#"> Expertise </a>
-                        <ul class="dropdown-menu big-drop">
-                            <li class="item-drop ">
-                                <div class="item-header-div">
-                                    <a class="item-header" href="#">Assignment</a>
-                                    </div>
-                                <ul class="list-unstyled">
-                                    <li> <a href="expertise-page.html"> Do My Assignment </a> </li>
-                                    <li> <a href="#"> MBA Assignment Help </a>  </li>
-                                    <li> <a href="#"> Nursing Assignment Writing </a>  </li>
-                                    <li> <a href="#"> Law Assignment Help </a>  </li>
-                                    <li> <a href="#"> Online Assignment Help </a>  </li>
-                                </ul>
-                            </li>
-                            <li class="item-drop">
-                                <div class="item-header-div">
-                                    <a class="item-header" href="#">Essay</a>
-                                    </div>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#"> Do My Essay </a> </li>
-                                    <li> <a href="#"> Law Essay Writing </a> </li>
-                                    <li> <a href="#"> Nursing Essay Writing </a> </li>
-                                    <li> <a href="#"> UK Essay </a> </li>
-                                    <li> <a href="#"> Write My Essay </a> </li>
-                                </ul>
-                            </li>
-                            <li class="item-drop">
-                                <div class="item-header-div">
-                                    <a class="item-header" href="#">Dissertation</a>
-                                    </div>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#"> Dissertation Methodology </a> </li>
-                                    <li> <a href="#"> Law Dissertation Writing </a> </li>
-                                    <li> <a href="#"> Marketing Dissertation Help</a> </li>
-                                    <li> <a href="#"> Dissertation Help </a> </li>
-                                    <li> <a href="#"> Nursing Dissertation Writing Help </a> </li>
-                                </ul>
-                            </li>
-                            <li class="item-drop">
-                                <div class="item-header-div">
-                                    <a class="item-header" href="#">Dissertation</a>
-                                    </div>
-                                <ul class="list-unstyled">
-                                    <li> <a href="#"> Buy Coursework Online </a> </li>
-                                    <li> <a href="#"> Do My Coursework </a> </li>
-                                    <li style="color: white;">-</li>
-                                    <li style="color: white;">-</li>
-                                    <li style="color: white;">-</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
-                <li class="nav-item"><a class="nav-link" href="blog-post-list.html">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-            </ul>
-        </div>
+    <span class="screen-darken"></span>
+    
+    <div class="container d-flex justify-content-between upper-div">
+    <a class="navbar-brand logo d-lg-none" href="index.html"><img src="assets/img/Logo.png" style="height: 50px;" /></a>
+    <button data-trigger="navbar_main" class="d-lg-none btn align-items-end"><i style="font-size: 25px;color: rgb(73, 73, 73);" class="fa fa-bars"></i></button>
     </div>
-</nav>
+    
+    <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg bg-white navbar-light fixed-top clean-navbar">
+        <!-- <div class="container-fluid"> -->
+        <div class="offcanvas-header">  
+            <button class="btn-close float-end"></button>
+        </div>
+        <div class="container">
+            <a class="navbar-brand logo logo-main" href="index.html"><img src="assets/img/Logo.png" style="height: 50px;" /></a>
+            <!-- <button data-bs-toggle="collapse" data-bs-target="#navcol-1" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button> -->
+            <div id="navcol-1">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="pricing.html">Our Prices</a></li>
+                    <li class="nav-item dropdown active"><a aria-expanded="false" data-bs-toggle="dropdown" class="dropdown-toggle nav-link" href="#">Services </a>
+                        <div class="dropdown-menu drop1">
+                            <a class="dropdown-item" href="service-page.html">Assignment Writing Services</a>
+                            <a class="dropdown-item" href="service-page.html">Essay Writing Service</a>
+                            <a class="dropdown-item" href="service-page.html">Dissertation Writing Service</a>
+                            <a class="dropdown-item" href="service-page.html">Coursework Help</a>
+                            <a class="dropdown-item" href="service-page.html">Research Paper Writing</a>
+                            <a class="dropdown-item" href="service-page.html">Team Paper Help</a>
+                            <a class="dropdown-item" href="service-page.html">Proofreading Service</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div>
+                            <a class="dropdown-toggle nav-link" data-bs-toggle="dropdown" href="#"> Expertise </a>
+                            <ul class="dropdown-menu big-drop">
+                                <li class="item-drop dropdown-item">
+                                    <div class="item-header-div">
+                                        <a class="item-header" href="#">Assignment</a>
+                                        </div>
+                                    <ul class="list-unstyled">
+                                        <li> <a href="expertise-page.html"> Do My Assignment </a> </li>
+                                        <li> <a href="#"> MBA Assignment Help </a>  </li>
+                                        <li> <a href="#"> Nursing Assignment Writing </a>  </li>
+                                        <li> <a href="#"> Law Assignment Help </a>  </li>
+                                        <li> <a href="#"> Online Assignment Help </a>  </li>
+                                    </ul>
+                                </li>
+                                <li class="item-drop dropdown-item">
+                                    <div class="item-header-div">
+                                        <a class="item-header" href="#">Essay</a>
+                                        </div>
+                                    <ul class="list-unstyled">
+                                        <li> <a href="#"> Do My Essay </a> </li>
+                                        <li> <a href="#"> Law Essay Writing </a> </li>
+                                        <li> <a href="#"> Nursing Essay Writing </a> </li>
+                                        <li> <a href="#"> UK Essay </a> </li>
+                                        <li> <a href="#"> Write My Essay </a> </li>
+                                    </ul>
+                                </li>
+                                <li class="item-drop dropdown-item">
+                                    <div class="item-header-div">
+                                        <a class="item-header" href="#">Dissertation</a>
+                                        </div>
+                                    <ul class="list-unstyled">
+                                        <li> <a href="#"> Dissertation Methodology </a> </li>
+                                        <li> <a href="#"> Law Dissertation Writing </a> </li>
+                                        <li> <a href="#"> Marketing Dissertation Help</a> </li>
+                                        <li> <a href="#"> Dissertation Help </a> </li>
+                                        <li> <a href="#"> Nursing Dissertation Writing Help </a> </li>
+                                    </ul>
+                                </li>
+                                <li class="item-drop dropdown-item">
+                                    <div class="item-header-div">
+                                        <a class="item-header" href="#">Dissertation</a>
+                                        </div>
+                                    <ul class="list-unstyled">
+                                        <li> <a href="#"> Buy Coursework Online </a> </li>
+                                        <li> <a href="#"> Do My Coursework </a> </li>
+                                        <li class="extra" style="color: white;">-</li>
+                                        <li class="extra" style="color: white;">-</li>
+                                        <li class="extra" style="color: white;">-</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="blog-post-list.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    <!-- </div> -->
+    </nav>
     <main class="page service-page">
-        <section style="background: linear-gradient(127deg, #003e77, rgba(0,28,82,0.86) 45%, rgba(0,150,160,0.74) 61%, rgba(0,255,240,0.8)), url(&quot;assets/img/depositphotos_68789187-stock-photo-students.jpg&quot;) center / cover no-repeat;">
+        <section class="clean-block service-header">
             <div class="container" style="padding-top: 100px;padding-bottom: 100px;">
-                <h1 style="color: rgb(255,255,255);">Assignment Writing Service</h1>
-                <p style="color: rgb(255,255,255);">Dissertation</p>
+                <h1>Assignment Writing Service</h1>
+                <p>Dissertation</p>
             </div>
             <div class="section-bottom-gradient" style="background: linear-gradient(-3deg, rgb(255,255,255), rgb(255,255,255) 50%, rgba(255,255,255,0) 51%, rgba(255,255,255,0));"></div>
             <div class="section-bottom-gradient-3" style="background: linear-gradient(0deg, rgb(255,255,255), rgb(255,255,255) 51%, rgba(255,255,255,0) 52%, rgba(255,255,255,0));"></div>
         </section>
-        <section style="margin-top: 100px;">
-            <div class="container d-lg-flex justify-content-between align-items-lg-start">
+        <section class="clean-block service-section">
+            <div class="container d-lg-flex justify-content-lg-between align-items-lg-start">
                 <div class="left-portion">
                     <div>
-                        <h3 style="font-size: 25px;">Most Reliable Yet Cheap Assignment Writing Service UK</h3>
-                        <div style="color: rgb(71,71,71);font-size: 15px;">
-                            <p style="font-size: 14px;color: rgb(71,71,71);">There is nothing to be ashamed about if you are struggling to manage the assignments and need help from cheap assignment writing service. No matter how many efforts you put into your academic work, it will fall short unless you will opt for a smart way of managing the pressure. Even if shortage of time is not a problem, but you lack the skills to cope up with fast pace learning formats, there is nothing wrong in getting assistance from our writing experts. Stressing about how to manage the tough schedules cannot end up at good grades, but the help from assignment writers can. We are committed to delivering the cheap assignment writing services UK while maintaining the standard of content and high-quality services.</p>
+                        <h3>Most Reliable Yet Cheap Assignment Writing Service UK</h3>
+                        <div>
+                            <p>There is nothing to be ashamed about if you are struggling to manage the assignments and need help from cheap assignment writing service. No matter how many efforts you put into your academic work, it will fall short unless you will opt for a smart way of managing the pressure. Even if shortage of time is not a problem, but you lack the skills to cope up with fast pace learning formats, there is nothing wrong in getting assistance from our writing experts. Stressing about how to manage the tough schedules cannot end up at good grades, but the help from assignment writers can. We are committed to delivering the cheap assignment writing services UK while maintaining the standard of content and high-quality services.</p>
                         </div>
-                        <h3 style="font-size: 25px;">Why Should You Opt for Assignment Writing Services?</h3>
-                        <div style="color: rgb(71,71,71);font-size: 15px;">
-                            <p style="font-size: 14px;color: rgb(71,71,71);">Every semester requires the students to avail good grades in multiple courses and not all of those courses are relevant to students’ interests and career goals, but they still have to acquire excellent scores in all to maintain their academic profile. This is a very common problem faced by UK students who have to handle the extra load because they are studying in the most competitive institutions and there is no scope of ignoring any subject. If you are one of those feeling frustrated about writing great assignments for even secondary courses, you can avail the opportunity of hiring our specialist assignment writing service. Our order assigning process is well-planned and structured where the tasks are assigned to the most adequate writer based in his/her qualification and experience and suitability for the task’s requirements. We can help you make most of your academic accomplishments without burden as our team of expert writers is based on subject specialist from all educational levels including PhD scholar, gifted authors and publishers. These experts can ensure delivery of assignments exactly as per your prerequisites, and they can effortlessly meet the deadlines while maintaining the originality and quality of the assignment.</p>
+                        <h3>Why Should You Opt for Assignment Writing Services?</h3>
+                        <div>
+                            <p>Every semester requires the students to avail good grades in multiple courses and not all of those courses are relevant to students’ interests and career goals, but they still have to acquire excellent scores in all to maintain their academic profile. This is a very common problem faced by UK students who have to handle the extra load because they are studying in the most competitive institutions and there is no scope of ignoring any subject. If you are one of those feeling frustrated about writing great assignments for even secondary courses, you can avail the opportunity of hiring our specialist assignment writing service. Our order assigning process is well-planned and structured where the tasks are assigned to the most adequate writer based in his/her qualification and experience and suitability for the task’s requirements. We can help you make most of your academic accomplishments without burden as our team of expert writers is based on subject specialist from all educational levels including PhD scholar, gifted authors and publishers. These experts can ensure delivery of assignments exactly as per your prerequisites, and they can effortlessly meet the deadlines while maintaining the originality and quality of the assignment.</p>
                         </div>
-                        <h3 style="font-size: 25px;">Well-Planned Pricing Policy</h3>
-                        <div style="color: rgb(71,71,71);font-size: 15px;">
-                            <p style="font-size: 14px;color: rgb(71,71,71);">As we are committed to providing cheap assignment writing, we have designed three plans with different price ranges and this decision is made based on the fact that students studying in the UK are belongs to diverse financial backgrounds and some have very limited budget for getting academic assistance. Considering the affordability of students, we are promising the budget-friendly but dependable assignment writing service UK so that we can open new growth horizons for you.</p>
+                        <h3>Well-Planned Pricing Policy</h3>
+                        <div>
+                            <p>As we are committed to providing cheap assignment writing, we have designed three plans with different price ranges and this decision is made based on the fact that students studying in the UK are belongs to diverse financial backgrounds and some have very limited budget for getting academic assistance. Considering the affordability of students, we are promising the budget-friendly but dependable assignment writing service UK so that we can open new growth horizons for you.</p>
                         </div>
-                        <h3 style="font-size: 25px;">Cheap Assignment Writing within Due Date</h3>
-                        <div style="color: rgb(71,71,71);font-size: 15px;">
-                            <p style="font-size: 14px;color: rgb(71,71,71);">With the advancement in technology and easy access to online academic materials, the expectations from the students have increased and their deadlines have become shorter. But managing multiple assignments every day is not an easy task no matter how much material is available on the web. Not all sources can be used in academic writing because at the end of the day, the credibility and dependability of all sources used in the assignments are questioned. So, in such pressures meeting deadlines has become even more challenging and in attempt to deliver the work within due date, students often lag behind in maintaining the quality of writing. This is where we step in with our efficient assignment writing service to support the students trying hard to sustain good grades in UK. We have maintained the 100% on-time delivery which help us in achieving 98% customer satisfaction rate. You can also judge our efficiency rate by our ability to meet the deadlines of even few hours.</p>
+                        <h3>Cheap Assignment Writing within Due Date</h3>
+                        <div>
+                            <p>With the advancement in technology and easy access to online academic materials, the expectations from the students have increased and their deadlines have become shorter. But managing multiple assignments every day is not an easy task no matter how much material is available on the web. Not all sources can be used in academic writing because at the end of the day, the credibility and dependability of all sources used in the assignments are questioned. So, in such pressures meeting deadlines has become even more challenging and in attempt to deliver the work within due date, students often lag behind in maintaining the quality of writing. This is where we step in with our efficient assignment writing service to support the students trying hard to sustain good grades in UK. We have maintained the 100% on-time delivery which help us in achieving 98% customer satisfaction rate. You can also judge our efficiency rate by our ability to meet the deadlines of even few hours.</p>
                         </div>
-                        <h3 style="font-size: 25px;">Guaranteed Quality and No Risk of Copyright Violation</h3>
-                        <div style="color: rgb(71,71,71);font-size: 15px;">
-                            <p style="font-size: 14px;color: rgb(71,71,71);">All the assignments are 100% plagiarism-free, and we have strongly followed policy of no counterfeiting and copying. All the assignments are provided along the plagiarism report and the pieces of writing are genuinely researched and critically evaluated by our expert writers and assignments are composed exactly as per the assigned brief provided by our customers. As we consider the customers’ expectations our priority, you can also ask for free revision if you are not happy with the work delivered. You are welcome to impart your criticism and the areas which you need to be amended, and we can roll out the improvements as soon as possible.</p>
+                        <h3>Guaranteed Quality and No Risk of Copyright Violation</h3>
+                        <div>
+                            <p">All the assignments are 100% plagiarism-free, and we have strongly followed policy of no counterfeiting and copying. All the assignments are provided along the plagiarism report and the pieces of writing are genuinely researched and critically evaluated by our expert writers and assignments are composed exactly as per the assigned brief provided by our customers. As we consider the customers’ expectations our priority, you can also ask for free revision if you are not happy with the work delivered. You are welcome to impart your criticism and the areas which you need to be amended, and we can roll out the improvements as soon as possible.</p>
                         </div>
-                        <h3 style="font-size: 25px;">Assist Assignment Writing Service</h3>
-                        <div style="color: rgb(71,71,71);font-size: 15px;">
-                            <p style="font-size: 14px;color: rgb(71,71,71);">We concentrate on keeping the process simple from order placement to final submission and even revisions. We have the simplest order placement process and secured payment methods, and enable our clients to view the progress of the orders by getting in contact with the writers. Moreover, for your convenience, we have a team of very helpful and efficient support team to whom you can contact any time a day for getting any order, payment or revision related queries both before and after the order. With our reliable and cheap assignment writing service UK, we are looking forward to sharing your academic burdens.</p>
+                        <h3>Assist Assignment Writing Service</h3>
+                        <div>
+                            <p">We concentrate on keeping the process simple from order placement to final submission and even revisions. We have the simplest order placement process and secured payment methods, and enable our clients to view the progress of the orders by getting in contact with the writers. Moreover, for your convenience, we have a team of very helpful and efficient support team to whom you can contact any time a day for getting any order, payment or revision related queries both before and after the order. With our reliable and cheap assignment writing service UK, we are looking forward to sharing your academic burdens.</p>
                         </div>
                     </div>
                 </div>
                 <div class="right-portion">
-                    <div style="background: rgba(255,255,255,0.38);border-radius: 8px;padding: 17px;box-shadow: 2px 2px 10px rgba(33,37,41,0.5);width: 100%;">
-                        <div class="d-flex"><img src="assets/img/order-now-e1581676710509.png" style="height: 104px;margin: 0px;margin-right: 0px;">
+                    <div class="right-box">
+                        <div class="d-flex">
+                            <img src="assets/img/order-now-e1581676710509.png">
                             <div>
-                                <h4 style="text-align: right;color: rgb(0,0,0);">PLACE AN ORDER</h4>
+                                <h4>PLACE AN ORDER</h4>
                             </div>
                         </div>
-                        <h6 style="text-align: right;color: rgb(0,0,0);">To Get 15% Discount</h6>
-                        <form style="background: rgba(255,255,255,0);color: rgba(255,255,255,0);"><input class="form-control" type="text" style="background: rgba(255,255,255,0);border-radius: 0px;border-color: rgb(0,0,0);color: rgb(0,0,0);margin-bottom: 10px;" placeholder="Name"><input class="form-control" type="text" style="background: rgba(255,255,255,0);border-radius: 0px;border-color: rgb(0,0,0);color: rgb(0,0,0);margin-bottom: 10px;" placeholder="Email"><input class="form-control" type="text" style="background: rgba(255,255,255,0);border-radius: 0px;border-color: rgb(0,0,0);color: rgb(0,0,0);margin-bottom: 10px;" placeholder="Phone">
-                            <div class="d-xl-flex d-xxl-flex justify-content-xl-end justify-content-xxl-end"><button class="btn btn-primary" type="button" style="background: rgb(253,99,13);font-size: 12px;border-style: none;border-top-color: rgb(255,;border-right-color: 255,;border-bottom-color: 255);border-left-color: 255,;">Order Now</button></div>
+                        <h6>To Get 15% Discount</h6>
+                        <form>
+                            <input class="form-control" type="text" placeholder="Name">
+                            <input class="form-control" type="text" placeholder="Email">
+                            <input class="form-control" type="text" placeholder="Phone">
+                            <div class="d-flex justify-content-end ">
+                                <button class="btn" type="button">Order Now</button></div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="page-footer dark">
+    <footer class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col-sm-3">
                     <h5>Assignments Max</h5>
-                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
-                        <li><a href="#" style="color: rgb(255,255,255);">Our Writers</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Contact Us</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">About Us</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Blog</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Refund Policy</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Revision Policy</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Privacy Policy</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Terms and Conditions</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Our Writers</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Revision Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Writing Services</h5>
-                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
-                        <li><a href="#" style="color: rgb(255,255,255);">Assignment Writing Services</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Cheap Essay Writing Services</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Coursework Help UK</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Online Assignment Help</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Dissertation Writing Service</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Proofreading Service UK</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Research Paper Writing Service</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Term Paper Help</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Assignment Writing Services</a></li>
+                        <li><a href="#">Cheap Essay Writing Services</a></li>
+                        <li><a href="#">Coursework Help UK</a></li>
+                        <li><a href="#">Online Assignment Help</a></li>
+                        <li><a href="#">Dissertation Writing Service</a></li>
+                        <li><a href="#">Proofreading Service UK</a></li>
+                        <li><a href="#">Research Paper Writing Service</a></li>
+                        <li><a href="#">Term Paper Help</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Subject Expertise</h5>
-                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
-                        <li><a href="#" style="color: rgb(255,255,255);">Law Essay Writing</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Nursing Assignment Writing</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">MBA Assignment Help</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Law Assignment Help</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Marketing Dissertation Help</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Nursing Dissertation Help</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Law Dissertation Writing</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Nursing Essay Writing</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Law Essay Writing</a></li>
+                        <li><a href="#">Nursing Assignment Writing</a></li>
+                        <li><a href="#">MBA Assignment Help</a></li>
+                        <li><a href="#">Law Assignment Help</a></li>
+                        <li><a href="#">Marketing Dissertation Help</a></li>
+                        <li><a href="#">Nursing Dissertation Help</a></li>
+                        <li><a href="#">Law Dissertation Writing</a></li>
+                        <li><a href="#">Nursing Essay Writing</a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
                     <h5>Other Services</h5>
-                    <ul class="list-unstyled" style="color: rgb(255,255,255);">
-                        <li><a href="#" style="color: rgb(255,255,255);">Do My Assignment</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Do My Essay</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Write My Essay</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">UK Essay</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Buy Coursework Online</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Coursework Help UK</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Dissertation Methodology</a></li>
-                        <li><a href="#" style="color: rgb(255,255,255);">Do My Coursework</a></li>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Do My Assignment</a></li>
+                        <li><a href="#">Do My Essay</a></li>
+                        <li><a href="#">Write My Essay</a></li>
+                        <li><a href="#">UK Essay</a></li>
+                        <li><a href="#">Buy Coursework Online</a></li>
+                        <li><a href="#">Coursework Help UK</a></li>
+                        <li><a href="#">Dissertation Methodology</a></li>
+                        <li><a href="#">Do My Coursework</a></li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div style="margin-left: 40px;margin-right: 40px;margin-top: 20px;">
-            <div style="color: rgb(255,255,255);">
-                <h3 style="font-weight: bold;color: rgb(255,255,255);">Get In Touch</h3>
-                <p style="margin-bottom: -4px;"> (20) 3807 6733</p>
-                <p style="margin-bottom: -4px;"> support@assignmentmax.co.uk</p>
-                <p> CentralPoint, 45 Beech Street, London EC2Y 8AD</p>
+        <div class="container d-md-flex">
+            <div>
+                <h3>Get In Touch</h3>
+                <p><i class="fa fa-phone"></i> (20) 3807 6733</p>
+                <p><i class="fa fa-envelope"></i> support@assignmentmax.co.uk</p>
+                <p><i class="fa fa-map-marker"></i> CentralPoint, 45 Beech Street, London EC2Y 8AD</p>
             </div>
-            <div></div>
+            <img style="height: 100px; text-align: center;" src="assets/img/payment-detail-icons.png" />
         </div>
-        <p class="d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="color: rgb(255,255,255);text-align: center;margin: 40px;"><br>Disclaimer:&nbsp; Assignment Max providing research based on the requirements to study and knowledge. You cannot supposed to submit the written material for your own.</p>
+        <div class="container" style="width: 80%;">
+            <p>
+                <br>Disclaimer:&nbsp; Assignment Max providing research based on the requirements to study and knowledge. You cannot supposed to submit the written material for your own.
+            </p>
+        </div>
         <div class="footer-copyright">
-            <p>© 2021 Copyright Text</p>
+            <!-- <div class="container"> -->
+                <p>Copyright © 2021 assigmnmentmax.co.uk. All Rights Reserved.</p>
+            <!-- </div> -->
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
