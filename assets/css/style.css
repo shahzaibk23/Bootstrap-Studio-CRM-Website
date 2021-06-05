@@ -851,6 +851,9 @@ left-text-2 {
   .right-portion {
     width: 60%;
   }
+  .right-box {
+    width: 45% !important;
+  }
 }
 
 .right-box {
@@ -893,7 +896,42 @@ left-text-2 {
   color: white;
 }
 
-
+.blog-header {
+  background: linear-gradient(89deg,#2b88da81 4%,#29c4aa88 47%), url("../img/Blog.jpg") center / cover no-repeat;
+}
+.blog-header .container div {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.blog-header .container div h1 {
+  color: rgb(255,255,255);
+  text-shadow: 2px 2px 25px rgba(0,0,0,0.87);
+}
+/* .blog-section {
+  padding: 40px;
+} */
+.blog-section .card-body {
+  padding: 0px;
+}
+.blog-section .not-first-card {
+  margin-top: 50px;
+}
+.blog-section .card-body div img {
+  width: 100%;
+  height: 100%;
+}
+.blog-section .card-textt {
+  padding: 16px;
+}
+.blog-section .card-textt h5 {
+  margin-top: 20px;
+}
+.blog-section .card-textt h6 {
+  margin-top: 15px;
+}
+.blog-section .card-textt p {
+  margin-top: 15px;
+}
 .owl-nav {
   position: absolute;
   z-index: -2;
