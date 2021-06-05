@@ -715,6 +715,10 @@ left-text-2 {
   color: rgb(255,255,255);
   background-color: #e02b20!important;
 }
+.header-colored .container div {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 
 .heading-div {
   background: #ffffff;
@@ -722,6 +726,9 @@ left-text-2 {
   text-align: center;
   margin-top: 80px;
   margin-bottom: 80px;
+}
+.heading-div p {
+  font-weight: bold;
 }
 
 .box-1 {
